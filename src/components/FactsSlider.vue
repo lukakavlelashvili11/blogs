@@ -1,0 +1,32 @@
+<script lang="ts" setup>
+import SliderControls from "./base/SliderControls.vue";
+import NewsCard from "./base/NewsCard.vue";
+import { Swiper, SwiperSlide } from "swiper/vue";
+import "swiper/css";
+import ExposeNav from "./base/ExposeNav.vue";
+import { ref } from "vue";
+
+const navRef = ref<{
+  next: () => void;
+  prev: () => void;
+} | null>(null);
+</script>
+
+<template>
+  <div class="bg-white w-100 p-3 rounded-xl">
+    <div class="flex justify-between items-center">
+      <span>ცნობილი ფაქტები</span>
+      <div class="flex justify-start items-center gap-4">
+        <SliderControls wrap shadow @next="navRef?.next" @prev="navRef?.prev" />
+      </div>
+    </div>
+    <div class="mt-5">
+      <Swiper :slides-per-view="2.5" :space-between="22">
+        <SwiperSlide v-for="i in 5">
+          <NewsCard />
+        </SwiperSlide>
+        <ExposeNav ref="navRef" />
+      </Swiper>
+    </div>
+  </div>
+</template>
