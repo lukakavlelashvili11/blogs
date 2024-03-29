@@ -8,7 +8,7 @@
         src="@/assets/img/Photo.png"
       />
     </div>
-    <div class="col-span-2">
+    <div class="col-span-2 grid items-center">
       <span class="text-sm">დღეიდან ასაწონად განკუთვნილი პოლიეთილენის პარკები აიკრძალა</span>
     </div>
   </div>

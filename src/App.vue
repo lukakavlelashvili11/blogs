@@ -10,7 +10,7 @@ import PopularNews from "@/components/PopularNews.vue"
 <template>
   <div class="pb-12">
   <Header />
-  <div class="w-full lg-desktop:max-w-screen-xl md-desktop:max-w-screen-lg tablet:max-w-screen-md mx-auto px-6">
+  <div class="w-full lg-desktop:max-w-screen-xl md-desktop:max-w-screen-lg tablet:max-w-screen-md mx-auto px-6 xl-desktop:max-w-screen-xl">
     <div class="grid grid-cols-12 grid-rows-1 grid-rows-1 gap-6 pt-10">
       <div class="col-span-9 row-start-1 row-end-1 h-full tablet:col-span-12">
         <Slider />
@@ -20,11 +20,11 @@ import PopularNews from "@/components/PopularNews.vue"
       </div>
     </div>
 
-    <div class="hidden w-full grid-cols-12 tablet:grid gap-8 pt-10">
-      <div class="col-span-6 mobile:col-span-12">
+    <div class="hidden w-full grid-cols-12 tablet:grid mobile:flex mobile:flex-wrap gap-8 pt-10">
+      <div class="col-span-6 ">
         <News />
       </div>
-      <div class="col-span-6 mobile:col-span-12">
+      <div class="col-span-6 ">
         <PopularNews/>
       </div>
     </div>
@@ -44,5 +44,3 @@ import PopularNews from "@/components/PopularNews.vue"
   </div>
 </div>
 </template>
-
-<style></style>

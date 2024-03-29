@@ -25,27 +25,17 @@ const navRef = ref<{
           clickable: true,
         }"
       >
-        <SwiperSlide>
+        <SwiperSlide v-for="i in 5" :key="i">
           <img
             class="w-full h-full rounded-xl"
-            src="https://picsum.photos/seed/picsum/406/206"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            class="w-full h-full rounded-xl"
-            src="https://picsum.photos/seed/picsum/406/206"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            class="w-full h-full rounded-xl"
-            src="https://picsum.photos/seed/picsum/406/206"
+            src="@/assets/img/main.jpg"
           />
         </SwiperSlide>
         <ExposeNav ref="navRef" />
       </Swiper>
-      <SliderControls @next="navRef?.next()" @prev="navRef?.prev()" />
+      <div class="mobile:hidden">
+      <SliderControls @next="navRef?.next()" @prev="navRef?.prev()"/>
+    </div>
     </div>
     <div class="flex justify-start items-center mt-4 gap-1">
       <Topic title="12.08.2023" />
@@ -56,7 +46,7 @@ const navRef = ref<{
         >ქვემო ქართლის რეგიონში 20 მლნ ლარამდე ღირებულების ინფრასტრუქტურული
         პროექტები დაიწყება</span
       >
-      <span class="text-secondary-gray text-base"
+      <span class="text-secondary-gray text-base mobile:hidden"
         >განთავსების (ლისტინგის) ორგანიზატორი სომხეთის ბანკი სს “არდშიბანკია”.
         ობლიგაციის ნომინალი - 1000 USD</span
       >

@@ -21,7 +21,7 @@ type NavListType = {
         }}</a>
       </li>
     </ul>
-    <div class="flex justify-center items-center w-full gap-2">
+    <div class="hidden mobile:flex justify-center items-center w-full gap-2">
       <IconBg :bg-color="'primary-light'" :size="'sm'">
         <Icon :name="'Instagram'" />
       </IconBg>

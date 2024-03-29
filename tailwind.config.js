@@ -15,6 +15,7 @@ export default {
         "md-desktop": { "max": "1240px"},
         "tablet": { "max": "1024px"},
         "mobile": { "max": "560px"},
+        "xl-desktop": { "min": "1920px"},
         "xl": "1312px",
         "lg": "1128px",
         "md": "928px",

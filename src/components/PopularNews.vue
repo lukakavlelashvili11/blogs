@@ -5,7 +5,7 @@ import NewsPopularItem from "@/components/base/NewsPopularItem.vue";
 
 <template>
   <NewsListContainer :title="'პოპულარული'">
-    <template v-for="i in 5">
+    <template v-for="i in 8">
       <NewsPopularItem />
     </template>
   </NewsListContainer>

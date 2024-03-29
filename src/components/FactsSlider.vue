@@ -27,8 +27,16 @@ const facts = [
   {
     title: "ქვემო ქართლის რეგიონში 20 მლნ ლარამდე ღირებულების",
     image: "test.png",
+  },{
+    title: "ქვემო ქართლის რეგიონში 20 მლნ ლარამდე ღირებულების",
+    image: "test.png",
+  },
+  {
+    title: "ქვემო ქართლის რეგიონში 20 მლნ ლარამდე ღირებულების",
+    image: "test.png",
   },
 ];
+
 </script>
 
 <template>
@@ -40,9 +48,29 @@ const facts = [
       </div>
     </div>
     <div class="mt-5">
-      <Swiper :slides-per-view="2.5" :space-between="22">
+      <Swiper
+        :slides-per-view="2.8"
+        :breakpoints="{
+          '0': {
+            slidesPerView: 1.1,
+          },
+          '560': {
+            slidesPerView: 2.4,
+          },
+          '1024': {
+            slidesPerView: 2.4,
+          },
+          '1240': {
+            slidesPerView: 2.8,
+          },
+          '1920': {
+            slidesPerView: 2.8,
+          },
+        }"
+        :space-between="22"
+      >
         <SwiperSlide v-for="fact in facts">
-          <NewsCard :data="fact"/>
+          <NewsCard :data="fact" />
         </SwiperSlide>
         <ExposeNav ref="navRef" />
       </Swiper>

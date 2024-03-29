@@ -78,7 +78,7 @@ onMounted(() => {
 <template>
   <header class="w-full bg-white relative">
     <div
-      class="mx-auto flex justify-between items-center py-9 w-full mobile:py-6 lg-desktop:max-w-screen-xl md-desktop:max-w-screen-lg px-6 tablet:max-w-screen-md"
+      class="mx-auto flex justify-between items-center py-9 w-full mobile:py-6 lg-desktop:max-w-screen-xl md-desktop:max-w-screen-lg px-6 tablet:max-w-screen-md xl-desktop:max-w-screen-xl"
     >
       <div class="flex gap-6 flex-start items-center" id="left-nav">
         <Icon :name="'Logo'" width="137" />
