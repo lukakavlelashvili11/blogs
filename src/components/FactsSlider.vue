@@ -10,6 +10,25 @@ const navRef = ref<{
   next: () => void;
   prev: () => void;
 } | null>(null);
+
+const facts = [
+  {
+    title: "ქვემო ქართლის რეგიონში 20 მლნ ლარამდე ღირებულების",
+    image: "/src/assets/img/test.png",
+  },
+  {
+    title: "ქვემო ქართლის რეგიონში 20 მლნ ლარამდე ღირებულების",
+    image: "/src/assets/img/test.png",
+  },
+  {
+    title: "ქვემო ქართლის რეგიონში 20 მლნ ლარამდე ღირებულების",
+    image: "/src/assets/img/test.png",
+  },
+  {
+    title: "ქვემო ქართლის რეგიონში 20 მლნ ლარამდე ღირებულების",
+    image: "/src/assets/img/test.png",
+  },
+];
 </script>
 
 <template>
@@ -22,8 +41,8 @@ const navRef = ref<{
     </div>
     <div class="mt-5">
       <Swiper :slides-per-view="2.5" :space-between="22">
-        <SwiperSlide v-for="i in 5">
-          <NewsCard />
+        <SwiperSlide v-for="fact in facts">
+          <NewsCard :data="fact"/>
         </SwiperSlide>
         <ExposeNav ref="navRef" />
       </Swiper>

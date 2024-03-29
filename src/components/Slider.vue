@@ -15,7 +15,7 @@ const navRef = ref<{
 </script>
 
 <template>
-  <div class="w-full bg-white p-3 rounded-xl">
+  <div class="w-full bg-white p-3 rounded-xl" id="slider">
     <div class="slider relative">
       <Swiper
         ref="swiperRef"

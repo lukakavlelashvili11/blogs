@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
+  important: true,
   theme: {
     extend: {
       colors: {
@@ -9,12 +10,14 @@ export default {
         "purple": "#585EE3",
       },
       screens: {
-        "lg-desktop": "1920px",
-        "md-desktop": "1240px",
-      },
-      width: {
-        "lg": "1312px",
-        "md": "1128px",
+        "lg-desktop": { "max": "1920px"},
+        "md-desktop": { "max": "1240px"},
+        "tablet": { "max": "1024px"},
+        "mobile": { "max": "560px"},
+        "xl": "1312px",
+        "lg": "1128px",
+        "md": "928px",
+        "sm": "500px",
       },
     },
   },

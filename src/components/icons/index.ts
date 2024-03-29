@@ -6,3 +6,5 @@ export { default as ArrowLeft } from "./ArrowLeft.vue";
 export { default as ArrowRight } from "./ArrowRight.vue";
 export { default as Clock } from "./Clock.vue";
 export { default as Point } from "./Point.vue";
+export { default as ArrowDown } from "./ArrowDown.vue";
+export { default as Menu } from "./Menu.vue";

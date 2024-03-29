@@ -1,12 +1,12 @@
 <script lang="ts" setup>
 import NewsListContainer from "@/components/base/NewsListContainer.vue";
-import NewsDatedItem from "@/components/base/NewsDatedItem.vue";
+import NewsPopularItem from "@/components/base/NewsPopularItem.vue";
 </script>
 
 <template>
-  <NewsListContainer :title="'ყველა სიახლე'">
+  <NewsListContainer :title="'პოპულარული'">
     <template v-for="i in 5">
-      <NewsDatedItem />
+      <NewsPopularItem />
     </template>
   </NewsListContainer>
 </template>
