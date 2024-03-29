@@ -36,7 +36,7 @@ onUnmounted(() => {
     :style="{ maxHeight: `${height}px` }"
   >
     <div>
-      <h2 class="font-bold">{{ title }}</h2>
+      <h2 class="font-bold font-medium text-xl">{{ title }}</h2>
     </div>
     <div class="flex flex-col mt-6">
       <slot></slot>

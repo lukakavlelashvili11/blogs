@@ -1,8 +1,9 @@
 <script lang="ts" setup>
 import Icon from "./Icon.vue";
+import * as Icons from "../icons";
 
 defineProps<{
-  icon: string;
+  icon: keyof typeof Icons;
 }>();
 </script>
 

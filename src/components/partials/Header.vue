@@ -87,7 +87,7 @@ onMounted(() => {
           <template v-for="(navItem, i) in navList">
             <template v-if="isShown(i)">
               <a :href="navItem.url">
-                <span class="text-secondary-gray">{{ navItem.title }}</span>
+                <span class="text-secondary-gray font-medium">{{ navItem.title }}</span>
               </a>
             </template>
           </template>
@@ -97,7 +97,7 @@ onMounted(() => {
             v-if="restList.length"
           >
             <div class="flex justify-start items-center gap-2">
-              <span class="text-secondary-gray cursor-default">სხვა</span>
+              <span class="text-secondary-gray cursor-default font-medium">სხვა</span>
               <Icon name="ArrowDown" />
             </div>
             <div
@@ -107,7 +107,7 @@ onMounted(() => {
             >
               <ul>
                 <li class="cursor-pointer mb-1" v-for="item in restList">
-                  <a :href="item.url">
+                  <a :href="item.url" class="font-medium">
                     {{ item.title }}
                   </a>
                 </li>
@@ -157,4 +157,9 @@ onMounted(() => {
   width: 2px;
   background: #f0f4f5;
 }
+
+/* .tt{
+  font-weight: 500;
+  font-family: "Helvetica Neue LT GEO", sans-serif;
+} */
 </style>

@@ -16,7 +16,7 @@ type NavListType = {
   <div class="menu absolute bg-white w-full p-12 flex flex-col gap-24">
     <ul>
       <li class="mb-10" v-for="navItem in navList">
-        <a :href="navItem.url" class="text-secondary-gray">{{
+        <a :href="navItem.url" class="text-secondary-gray font-medium">{{
           navItem.title
         }}</a>
       </li>

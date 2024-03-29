@@ -14,19 +14,19 @@ const navRef = ref<{
 const facts = [
   {
     title: "ქვემო ქართლის რეგიონში 20 მლნ ლარამდე ღირებულების",
-    image: "/src/assets/img/test.png",
+    image: "est.png",
   },
   {
     title: "ქვემო ქართლის რეგიონში 20 მლნ ლარამდე ღირებულების",
-    image: "/src/assets/img/test.png",
+    image: "test.png",
   },
   {
     title: "ქვემო ქართლის რეგიონში 20 მლნ ლარამდე ღირებულების",
-    image: "/src/assets/img/test.png",
+    image: "test.png",
   },
   {
     title: "ქვემო ქართლის რეგიონში 20 მლნ ლარამდე ღირებულების",
-    image: "/src/assets/img/test.png",
+    image: "test.png",
   },
 ];
 </script>
@@ -34,7 +34,7 @@ const facts = [
 <template>
   <div class="bg-white w-100 p-3 rounded-xl">
     <div class="flex justify-between items-center">
-      <span>ცნობილი ფაქტები</span>
+      <span class="font-medium text-black-900">ცნობილი ფაქტები</span>
       <div class="flex justify-start items-center gap-4">
         <SliderControls wrap shadow @next="navRef?.next" @prev="navRef?.prev" />
       </div>

@@ -5,7 +5,7 @@ import NewsDatedItem from "@/components/base/NewsDatedItem.vue";
 
 <template>
   <NewsListContainer :title="'ყველა სიახლე'">
-    <template v-for="i in 5">
+    <template v-for="i in 8">
       <NewsDatedItem />
     </template>
   </NewsListContainer>

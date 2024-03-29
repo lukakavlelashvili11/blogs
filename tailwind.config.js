@@ -8,6 +8,7 @@ export default {
         "primary-light": "#F5F8FF",
         "secondary-gray": "#657178",
         "purple": "#585EE3",
+        "black-900": "#1D2D35",
       },
       screens: {
         "lg-desktop": { "max": "1920px"},
@@ -19,6 +20,9 @@ export default {
         "md": "928px",
         "sm": "500px",
       },
+      fontFamily: {
+        medium: 'Helvetica Neue LT GEO'
+      }
     },
   },
   plugins: [],

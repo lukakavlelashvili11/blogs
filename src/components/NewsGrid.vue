@@ -5,28 +5,28 @@ import { computed, ref } from "vue";
 const news = ref([
   {
     title: "ქვემო ქართლის რეგიონში 20 ",
-    image: "/src/assets/img/test.png",
+    image: "test.png",
     topics: ["12.08.2023", "პოლიტიკა"],
   },
   {
     title: "ქვემო ქართლის რეგიონში 20",
-    image: "/src/assets/img/test.png",
+    image: "test.png",
     topics: ["12.08.2023", "პოლიტიკა"],
   },
   {
     title: "ქვემო ქართლის რეგიონში 20 ",
-    image: "/src/assets/img/pic.png",
+    image: "pic.png",
     topics: ["12.08.2023", "პოლიტიკა"],
     isStreched: true,
   },
   {
     title: "ქვემო ქართლის რეგიონში 20 ",
-    image: "/src/assets/img/test.png",
+    image: "test.png",
     topics: ["12.08.2023", "პოლიტიკა"],
   },
   {
     title: "ქვემო ქართლის რეგიონში 20 ",
-    image: "/src/assets/img/test.png",
+    image: "test.png",
     topics: ["12.08.2023", "პოლიტიკა"],
   },
 ]);

@@ -12,8 +12,8 @@ import Icon from "./Icon.vue";
         <span class="text-purple text-xs font-bold">02.01.2023</span>
       </div>
     </div>
-    <div class="my-2.5">
-      <span> დღეიდან ასაწონად განკუთვნილი პოლიეთილენის პარკები აიკრძალა </span>
+    <div class="my-2">
+      <span class="text-sm"> დღეიდან ასაწონად განკუთვნილი პოლიეთილენის პარკები აიკრძალა </span>
     </div>
   </div>
 </template>
